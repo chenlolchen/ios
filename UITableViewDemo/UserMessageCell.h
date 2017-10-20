@@ -1,5 +1,5 @@
 //
-//  DemoCell.h
+//  UserMessageCell.h
 //  UITableViewDemo
 //
 //  Created by CHENCO7 on 17/10/16.
@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class Friend;
+@class User;
 
-@interface DemoCell : UITableViewCell
+@interface UserMessageCell : UITableViewCell
 @property(strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property(strong, nonatomic) IBOutlet UIButton *starButton;
 @property(strong, nonatomic) IBOutlet UIImageView *starImage;
 @property(strong, nonatomic) IBOutlet UIImageView *userImage;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *messageLabel;
-@property(strong, nonatomic) Friend *friend;
+@property(strong, nonatomic) User *user;
 @end

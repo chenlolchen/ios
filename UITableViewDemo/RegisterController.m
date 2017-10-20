@@ -119,6 +119,7 @@
         RegisterTextCell *cell = [RegisterTextCell new];
         cell.labelName.text = formObject.labelText;
         cell.labelText.placeholder = formObject.placeholderText;
+        cell.labelText.keyboardType = UIKeyboardTypeAlphabet;
         [self.textFieldArray addObject:cell.labelText];
         cell.labelText.delegate=self;
         return cell;

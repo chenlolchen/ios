@@ -6,8 +6,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface Friend : NSObject
-@property(nonatomic, strong) UIImage *image;
+@interface User : NSObject
+@property(nonatomic, strong) NSString *image;
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) NSDate *date;
 @property(nonatomic, strong) NSString *messageLabel;
