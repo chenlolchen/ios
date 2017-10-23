@@ -7,6 +7,7 @@
 //
 
 #import "SearchCityPage.h"
+
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
@@ -42,7 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)createTableView{
+- (void)createTableView {
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
 //    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     _tableView.delegate = self;
@@ -51,7 +52,7 @@
 
 }
 
-- (void)createSearch{
+- (void)createSearch {
     _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     _searchController.searchResultsUpdater = self;
     _searchController.searchBar.delegate = self;//*****这个很重要，一定要设置并引用了代理之后才能调用searchBar的常用方法*****
@@ -64,10 +65,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.searchController.active) {
-//        _tableView.hidden = NO;
         return [searchList count];
-    }else{
-//        _tableView.hidden = YES;
+    } else {
         return [dataList count];
     }
 }
@@ -81,14 +80,14 @@
         cell.backgroundColor = [UIColor whiteColor];
     }
     if (self.searchController.active) {
-        NSLog(@"into table view, selectedCity is : %@, tablecell is : %@",self.selectedCity, searchList[indexPath.row]);
+        NSLog(@"into table view, selectedCity is : %@, tablecell is : %@", self.selectedCity, searchList[indexPath.row]);
 //        _tableView.hidden = NO;
-        if([searchList[indexPath.row] isEqualToString:self.selectedCity]){
+        if ([searchList[indexPath.row] isEqualToString:self.selectedCity]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
         [cell.textLabel setText:searchList[indexPath.row]];
     } else {
-        if([dataList[indexPath.row] isEqualToString:self.selectedCity]){
+        if ([dataList[indexPath.row] isEqualToString:self.selectedCity]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
 //        _tableView.hidden = YES;
@@ -98,7 +97,6 @@
     return cell;
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     self.block(cell.textLabel.text);
@@ -106,37 +104,25 @@
     NSLog(@"selected ..");
 }
 
-
-
--(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSLog(@"updateSearchResultsForSearchController..");
     NSString *searchString = [self.searchController.searchBar text];
 
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@", searchString];
-    if (searchList!= nil) {
+    if (searchList != nil) {
         [searchList removeAllObjects];
     }
     //过滤数据
-    searchList= [NSMutableArray arrayWithArray:[dataList filteredArrayUsingPredicate:predicate]];
+    searchList = [NSMutableArray arrayWithArray:[dataList filteredArrayUsingPredicate:predicate]];
     //刷新表格
     [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    if(self.searchController.active){
+    if (self.searchController.active) {
         [self.searchController dismissViewControllerAnimated:NO completion:nil];
     }
     [super viewWillDisappear:animated];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

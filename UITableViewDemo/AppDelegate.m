@@ -19,13 +19,12 @@
 @implementation AppDelegate
 
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    Boolean flag = true;
+    Boolean flag = false;
     UIViewController *vc;
-    if(flag){
+    if (flag) {
         vc = [[ViewController alloc] init];
     } else {
         vc = [[RegisterController alloc] init];

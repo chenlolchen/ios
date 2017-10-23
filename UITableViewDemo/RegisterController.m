@@ -7,18 +7,18 @@
 //
 
 #import "RegisterController.h"
-#import "FormObject.h"
 #import "DatePickerView.h"
 #import "RegisterTextCell.h"
 #import "AccessoryTableViewCell.h"
 #import "SexPickerView.h"
 #import "SearchCityPage.h"
+#import "RegisterObject.h"
 
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 
-@interface RegisterController ()<UITextFieldDelegate> {
+@interface RegisterController () <UITextFieldDelegate> {
     NSArray *formLabelArray;
     UITapGestureRecognizer *tap;
     DatePickerView *_datePickerView;
@@ -39,14 +39,14 @@
 
     [self createTableView];
 
-    tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapView:)];
+    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapView:)];
 
     tap.numberOfTapsRequired = 1;
     tap.numberOfTouchesRequired = 1;
     [self.view addGestureRecognizer:tap];
 }
 
-- (void)createTableView{
+- (void)createTableView {
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
@@ -100,7 +100,7 @@
     NSArray *placeholderArray = @[@"用户名", @"性别", @"生日", @"地址"];
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (int i = 0; i < labelArray.count; ++i) {
-        FormObject *object = [FormObject new];
+        RegisterObject *object = [RegisterObject new];
         object.labelText = labelArray[i];
         object.placeholderText = placeholderArray[i];
         [array addObject:object];
@@ -113,79 +113,79 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FormObject *formObject = formLabelArray[indexPath.row];
+    RegisterObject *registerObject = formLabelArray[indexPath.row];
 
-    if ([formObject.labelText isEqualToString:@"Birthday"] || [formObject.labelText isEqualToString:@"Sex"] || [formObject.labelText isEqualToString:@"Name"]) {
+    if ([registerObject.labelText isEqualToString:@"Birthday"] || [registerObject.labelText isEqualToString:@"Sex"] || [registerObject.labelText isEqualToString:@"Name"]) {
         RegisterTextCell *cell = [RegisterTextCell new];
-        cell.labelName.text = formObject.labelText;
-        cell.labelText.placeholder = formObject.placeholderText;
+        cell.labelName.text = registerObject.labelText;
+        cell.labelText.placeholder = registerObject.placeholderText;
         cell.labelText.keyboardType = UIKeyboardTypeAlphabet;
         [self.textFieldArray addObject:cell.labelText];
-        cell.labelText.delegate=self;
+        cell.labelText.delegate = self;
         return cell;
     } else {
         AccessoryTableViewCell *cell = [AccessoryTableViewCell new];
-        cell.labelName.text = formObject.labelText;
-        cell.labelText.placeholder = formObject.placeholderText;
+        cell.labelName.text = registerObject.labelText;
+        cell.labelText.placeholder = registerObject.placeholderText;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.labelText.delegate = self;
         return cell;
     }
 }
 
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     [self.textFieldArray[0] resignFirstResponder];
-    if(_datePickerView){
+    if (_datePickerView) {
         [_datePickerView removeFromSuperview];
         _datePickerView = nil;
     }
-    if(_sexPickerView){
+    if (_sexPickerView) {
         [_sexPickerView removeFromSuperview];
         _sexPickerView = nil;
     }
     UIView *v = textField.superview;
-    NSString *tagName = ((UILabel *)v.subviews[0]).text;
+    NSString *tagName = ((UILabel *) v.subviews[0]).text;
     NSLog(@"select row is ..%@", tagName);
     if ([tagName isEqualToString:@"Sex"]) {
-        if(!_sexPickerView){
+        if (!_sexPickerView) {
             _sexPickerView = [[SexPickerView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 200, kScreenWidth, 200)];
             _sexPickerView.backgroundColor = [UIColor whiteColor];
-            _sexPickerView.block = ^(NSString *str){
+            _sexPickerView.block = ^(NSString *str) {
                 textField.text = str;
             };
-            _sexPickerView.cancelBlock = ^(){
+            _sexPickerView.cancelBlock = ^() {
                 _sexPickerView = nil;
             };
             [self.view resignFirstResponder];
             [self.view addSubview:_sexPickerView];
         }
         return NO;
-    } else if ([tagName isEqualToString:@"Birthday"]){
-        if(!_datePickerView){
+    } else if ([tagName isEqualToString:@"Birthday"]) {
+        if (!_datePickerView) {
             _datePickerView = [[DatePickerView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 200, kScreenWidth, 200)];
             _datePickerView.backgroundColor = [UIColor whiteColor];
             _datePickerView.block = ^(NSString *str) {
                 textField.text = str;
                 _datePickerView = nil;
             };
-            _datePickerView.cancelBlock = ^(){
+            _datePickerView.cancelBlock = ^() {
                 _datePickerView = nil;
             };
             [self.view resignFirstResponder];
-            [self.view addSubview: _datePickerView];
+            [self.view addSubview:_datePickerView];
         }
 
         return NO;
-    } else if([tagName isEqualToString:@"City"]){
+    } else if ([tagName isEqualToString:@"City"]) {
         SearchCityPage *searchCityPage = [[SearchCityPage alloc] init];
         searchCityPage.selectedCity = textField.text;
 
-        UIBarButtonItem * backButtonItem = [[UIBarButtonItem alloc] init];
+        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] init];
         backButtonItem.title = @"Back";
         self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
         self.navigationItem.backBarButtonItem = backButtonItem;
 
-        searchCityPage.block = ^(NSString *str){
+        searchCityPage.block = ^(NSString *str) {
             textField.text = str;
         };
         [self.navigationController pushViewController:searchCityPage animated:YES];

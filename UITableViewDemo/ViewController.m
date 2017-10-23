@@ -37,6 +37,7 @@
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"response : %@", response);
             NSMutableArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 
             NSMutableArray *array = [[NSMutableArray alloc] init];

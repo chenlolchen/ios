@@ -11,21 +11,15 @@
 		2EAE0123E07C5B55C5DDC81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0A1F70FAD5389692F9A2 /* AppDelegate.m */; };
 		2EAE02ED58561F87A4BD6C2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE05F66395C3BB62256BEC /* ViewController.m */; };
 		2EAE066016A2E6A33DEBF2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE015C9A8EFBC45D0E1644 /* LaunchScreen.storyboard */; };
+		2EAE084B097984D3AFBDBA04 /* RegisterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0A551750830BD656911A /* RegisterObject.m */; };
 		2EAE0894F1361971CD867D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE039B55F4268899B75819 /* main.m */; };
 		2EAE099EC9B61B6AD842FD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */; };
 		2EAE0BDF3C8DB050D6F4D8EE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0E38163ACE461975A45A /* User.m */; };
 		2EAE0DCB5B853995000BD326 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE070B0720B65B6D966D69 /* DatePickerView.m */; };
-		2EAE0F05A8DE94A35B76ACE1 /* FormObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0BA546A9D84A88048B2D /* FormObject.m */; };
 		C3FFB1FE1F9484660076589D /* UserMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB1FC1F9484660076589D /* UserMessageCell.m */; };
 		C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB1FD1F9484660076589D /* UserMessageCell.xib */; };
-		C3FFB2351F95C6700076589D /* FormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2331F95C6700076589D /* FormTextCell.m */; };
-		C3FFB2361F95C6700076589D /* FormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2341F95C6700076589D /* FormTextCell.xib */; };
 		C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2381F95C7950076589D /* RegisterController.m */; };
 		C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2391F95C7950076589D /* RegisterController.xib */; };
-		C3FFB2441F96F3270076589D /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2421F96F3270076589D /* PickerView.m */; };
-		C3FFB2451F96F3270076589D /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2431F96F3270076589D /* PickerView.xib */; };
-		C3FFB2491F96FDE90076589D /* FormLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2471F96FDE90076589D /* FormLabelCell.m */; };
-		C3FFB24A1F96FDE90076589D /* FormLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2481F96FDE90076589D /* FormLabelCell.xib */; };
 		C3FFB24E1F974BEB0076589D /* RegisterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB24C1F974BEB0076589D /* RegisterLabelCell.m */; };
 		C3FFB24F1F974BEB0076589D /* RegisterLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB24D1F974BEB0076589D /* RegisterLabelCell.xib */; };
 		C3FFB2531F974EEC0076589D /* RegisterTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2511F974EEC0076589D /* RegisterTextCell.m */; };
@@ -43,32 +37,23 @@
 		2EAE04BCF1D12620E13ED20A /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
 		2EAE05F66395C3BB62256BEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2EAE064C981EB2590EB76DF7 /* UITableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EAE06CD208682CAD022CE67 /* FormObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormObject.h; sourceTree = "<group>"; };
 		2EAE070B0720B65B6D966D69 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
 		2EAE07F9AECA9A1E38669027 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2EAE091392F1C32ECB697343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2EAE0A1F70FAD5389692F9A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EAE0BA546A9D84A88048B2D /* FormObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormObject.m; sourceTree = "<group>"; };
+		2EAE0A551750830BD656911A /* RegisterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterObject.m; sourceTree = "<group>"; };
 		2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EAE0C867F43103093F0AF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EAE0E38163ACE461975A45A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		2EAE0ECBF5E5FE5AA3832FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		2EAE0F10DEF2E8EF7BD2FFF6 /* RegisterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterObject.h; sourceTree = "<group>"; };
 		2EAE0FCAED30E7588304467D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3FFB1FB1F9484660076589D /* UserMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMessageCell.h; sourceTree = "<group>"; };
 		C3FFB1FC1F9484660076589D /* UserMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMessageCell.m; sourceTree = "<group>"; };
 		C3FFB1FD1F9484660076589D /* UserMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserMessageCell.xib; sourceTree = "<group>"; };
-		C3FFB2321F95C6700076589D /* FormTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTextCell.h; sourceTree = "<group>"; };
-		C3FFB2331F95C6700076589D /* FormTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTextCell.m; sourceTree = "<group>"; };
-		C3FFB2341F95C6700076589D /* FormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTextCell.xib; sourceTree = "<group>"; };
 		C3FFB2371F95C7950076589D /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		C3FFB2381F95C7950076589D /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		C3FFB2391F95C7950076589D /* RegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
-		C3FFB2411F96F3270076589D /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
-		C3FFB2421F96F3270076589D /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
-		C3FFB2431F96F3270076589D /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
-		C3FFB2461F96FDE90076589D /* FormLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormLabelCell.h; sourceTree = "<group>"; };
-		C3FFB2471F96FDE90076589D /* FormLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormLabelCell.m; sourceTree = "<group>"; };
-		C3FFB2481F96FDE90076589D /* FormLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormLabelCell.xib; sourceTree = "<group>"; };
 		C3FFB24B1F974BEB0076589D /* RegisterLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterLabelCell.h; sourceTree = "<group>"; };
 		C3FFB24C1F974BEB0076589D /* RegisterLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterLabelCell.m; sourceTree = "<group>"; };
 		C3FFB24D1F974BEB0076589D /* RegisterLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterLabelCell.xib; sourceTree = "<group>"; };
@@ -137,20 +122,9 @@
 				C3FFB1FB1F9484660076589D /* UserMessageCell.h */,
 				C3FFB1FC1F9484660076589D /* UserMessageCell.m */,
 				C3FFB1FD1F9484660076589D /* UserMessageCell.xib */,
-				C3FFB2321F95C6700076589D /* FormTextCell.h */,
-				C3FFB2331F95C6700076589D /* FormTextCell.m */,
-				C3FFB2341F95C6700076589D /* FormTextCell.xib */,
 				C3FFB2371F95C7950076589D /* RegisterController.h */,
 				C3FFB2381F95C7950076589D /* RegisterController.m */,
 				C3FFB2391F95C7950076589D /* RegisterController.xib */,
-				2EAE0BA546A9D84A88048B2D /* FormObject.m */,
-				2EAE06CD208682CAD022CE67 /* FormObject.h */,
-				C3FFB2411F96F3270076589D /* PickerView.h */,
-				C3FFB2421F96F3270076589D /* PickerView.m */,
-				C3FFB2431F96F3270076589D /* PickerView.xib */,
-				C3FFB2461F96FDE90076589D /* FormLabelCell.h */,
-				C3FFB2471F96FDE90076589D /* FormLabelCell.m */,
-				C3FFB2481F96FDE90076589D /* FormLabelCell.xib */,
 				2EAE04BCF1D12620E13ED20A /* DatePickerView.h */,
 				2EAE070B0720B65B6D966D69 /* DatePickerView.m */,
 				C3FFB24B1F974BEB0076589D /* RegisterLabelCell.h */,
@@ -167,6 +141,8 @@
 				C3FFB25D1F9835650076589D /* SearchCityPage.h */,
 				C3FFB25E1F9835650076589D /* SearchCityPage.m */,
 				C3FFB25F1F9835650076589D /* SearchCityPage.xib */,
+				2EAE0A551750830BD656911A /* RegisterObject.m */,
+				2EAE0F10DEF2E8EF7BD2FFF6 /* RegisterObject.h */,
 			);
 			path = UITableViewDemo;
 			sourceTree = "<group>";
@@ -225,12 +201,9 @@
 				2EAE066016A2E6A33DEBF2B8 /* LaunchScreen.storyboard in Resources */,
 				C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */,
 				C3FFB2541F974EEC0076589D /* RegisterTextCell.xib in Resources */,
-				C3FFB2451F96F3270076589D /* PickerView.xib in Resources */,
-				C3FFB2361F95C6700076589D /* FormTextCell.xib in Resources */,
 				C3FFB2591F9759920076589D /* AccessoryTableViewCell.xib in Resources */,
 				C3FFB24F1F974BEB0076589D /* RegisterLabelCell.xib in Resources */,
 				C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */,
-				C3FFB24A1F96FDE90076589D /* FormLabelCell.xib in Resources */,
 				2EAE009AA34C47920A9C756F /* Main.storyboard in Resources */,
 				C3FFB2611F9835650076589D /* SearchCityPage.xib in Resources */,
 			);
@@ -248,17 +221,14 @@
 				C3FFB2581F9759920076589D /* AccessoryTableViewCell.m in Sources */,
 				2EAE0123E07C5B55C5DDC81A /* AppDelegate.m in Sources */,
 				C3FFB2531F974EEC0076589D /* RegisterTextCell.m in Sources */,
-				C3FFB2351F95C6700076589D /* FormTextCell.m in Sources */,
-				C3FFB2491F96FDE90076589D /* FormLabelCell.m in Sources */,
 				C3FFB2601F9835650076589D /* SearchCityPage.m in Sources */,
 				C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */,
 				2EAE02ED58561F87A4BD6C2D /* ViewController.m in Sources */,
 				C3FFB24E1F974BEB0076589D /* RegisterLabelCell.m in Sources */,
 				2EAE0BDF3C8DB050D6F4D8EE /* User.m in Sources */,
-				C3FFB2441F96F3270076589D /* PickerView.m in Sources */,
-				2EAE0F05A8DE94A35B76ACE1 /* FormObject.m in Sources */,
 				C3FFB25C1F975D7F0076589D /* SexPickerView.m in Sources */,
 				2EAE0DCB5B853995000BD326 /* DatePickerView.m in Sources */,
+				2EAE084B097984D3AFBDBA04 /* RegisterObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
