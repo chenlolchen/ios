@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface RegisterController : UIViewController
 
 @end

@@ -39,9 +39,6 @@
     return self;
 }
 
-
-
-
 - (void)doneAction {
     if(sexStr == NULL){
         sexStr = sexArray[0];

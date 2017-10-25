@@ -15,16 +15,6 @@
 
 @implementation UserMessageCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    NSLog(@"init2222 ...");
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-
-    }
-    return self;
-}
-
 - (void)awakeFromNib {
     [super awakeFromNib];
 

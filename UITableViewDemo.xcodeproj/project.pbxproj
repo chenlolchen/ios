@@ -9,60 +9,55 @@
 /* Begin PBXBuildFile section */
 		2EAE009AA34C47920A9C756F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE00382893106024597B4E /* Main.storyboard */; };
 		2EAE0123E07C5B55C5DDC81A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0A1F70FAD5389692F9A2 /* AppDelegate.m */; };
-		2EAE02ED58561F87A4BD6C2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE05F66395C3BB62256BEC /* ViewController.m */; };
+		2EAE0259A7708BA991AC9D86 /* RegisterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0704A700D428E000E621 /* RegisterObject.m */; };
+		2EAE031A06AEECADF223645F /* RegisterTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE05A9BE104DA6E5561235 /* RegisterTextCell.m */; };
+		2EAE032BC891C24CC22D837F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0E854BE3A18729187651 /* ViewController.m */; };
+		2EAE03670EEA98EF4B0214F1 /* AccessoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE029644D110F3594544A2 /* AccessoryTableViewCell.m */; };
+		2EAE03D9D3B79234911A1A86 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0DCB350BAB9D39F83AC6 /* RegisterController.m */; };
 		2EAE066016A2E6A33DEBF2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE015C9A8EFBC45D0E1644 /* LaunchScreen.storyboard */; };
-		2EAE084B097984D3AFBDBA04 /* RegisterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0A551750830BD656911A /* RegisterObject.m */; };
+		2EAE0673A07A94BF3396F79A /* SexPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0C9AEF051FA2EBCE4DD5 /* SexPickerView.m */; };
+		2EAE08049ABCEA270FAC3085 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0924AAF0EB34D53470C7 /* DatePickerView.m */; };
 		2EAE0894F1361971CD867D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE039B55F4268899B75819 /* main.m */; };
 		2EAE099EC9B61B6AD842FD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */; };
-		2EAE0BDF3C8DB050D6F4D8EE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0E38163ACE461975A45A /* User.m */; };
-		2EAE0DCB5B853995000BD326 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE070B0720B65B6D966D69 /* DatePickerView.m */; };
-		C3FFB1FE1F9484660076589D /* UserMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB1FC1F9484660076589D /* UserMessageCell.m */; };
-		C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB1FD1F9484660076589D /* UserMessageCell.xib */; };
-		C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2381F95C7950076589D /* RegisterController.m */; };
-		C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2391F95C7950076589D /* RegisterController.xib */; };
-		C3FFB2531F974EEC0076589D /* RegisterTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2511F974EEC0076589D /* RegisterTextCell.m */; };
-		C3FFB2541F974EEC0076589D /* RegisterTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */; };
-		C3FFB2581F9759920076589D /* AccessoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2561F9759920076589D /* AccessoryTableViewCell.m */; };
-		C3FFB2591F9759920076589D /* AccessoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2571F9759920076589D /* AccessoryTableViewCell.xib */; };
-		C3FFB25C1F975D7F0076589D /* SexPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB25B1F975D7F0076589D /* SexPickerView.m */; };
-		C3FFB2601F9835650076589D /* SearchCityPage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB25E1F9835650076589D /* SearchCityPage.m */; };
-		C3FFB2611F9835650076589D /* SearchCityPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB25F1F9835650076589D /* SearchCityPage.xib */; };
+		2EAE0A1B460B55FC0D74DB7B /* HttpRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0FBEDDB9C73AAB50A9F4 /* HttpRequestHelper.m */; };
+		2EAE0C8684B4DC3929251AF2 /* UserMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE0B03EFB618F127044AC5 /* UserMessageCell.xib */; };
+		2EAE0C9C22B77AAAA34AF2FC /* SearchCityPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0CA419F5901F628868A7 /* SearchCityPage.m */; };
+		2EAE0E3A1B9F448B454553E5 /* UserMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0A9402EBB1CE898EF391 /* UserMessageCell.m */; };
+		2EAE0F447F748E0B8D5DBF2C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE090C80B1FE075BEAC41F /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2EAE00489A4E7C0346BC77E5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2EAE0259FFEEA9823091C39E /* AccessoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessoryTableViewCell.h; sourceTree = "<group>"; };
+		2EAE029644D110F3594544A2 /* AccessoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessoryTableViewCell.m; sourceTree = "<group>"; };
+		2EAE02D3010C697849130F3F /* RegisterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterObject.h; sourceTree = "<group>"; };
+		2EAE03850D52A4B6425020A4 /* SearchCityPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityPage.h; sourceTree = "<group>"; };
 		2EAE039B55F4268899B75819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EAE04BCF1D12620E13ED20A /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
-		2EAE05F66395C3BB62256BEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EAE0540EA753DFABC8CFC24 /* UserMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMessageCell.h; sourceTree = "<group>"; };
+		2EAE05A9BE104DA6E5561235 /* RegisterTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTextCell.m; sourceTree = "<group>"; };
 		2EAE064C981EB2590EB76DF7 /* UITableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EAE070B0720B65B6D966D69 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
-		2EAE07F9AECA9A1E38669027 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EAE0704A700D428E000E621 /* RegisterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterObject.m; sourceTree = "<group>"; };
+		2EAE090C80B1FE075BEAC41F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		2EAE091392F1C32ECB697343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EAE09182B2CE5938CC21FA6 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		2EAE0924AAF0EB34D53470C7 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
 		2EAE0A1F70FAD5389692F9A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EAE0A551750830BD656911A /* RegisterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterObject.m; sourceTree = "<group>"; };
+		2EAE0A5F424AE9829A7A261E /* SexPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexPickerView.h; sourceTree = "<group>"; };
+		2EAE0A9402EBB1CE898EF391 /* UserMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMessageCell.m; sourceTree = "<group>"; };
+		2EAE0B03EFB618F127044AC5 /* UserMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserMessageCell.xib; sourceTree = "<group>"; };
+		2EAE0B166E3AE37CA348ECBA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2EAE0B34A88035D9255E5668 /* RegisterTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTextCell.h; sourceTree = "<group>"; };
 		2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EAE0C65B580725AD5BE0D9F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2EAE0C867F43103093F0AF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2EAE0E38163ACE461975A45A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2EAE0C9AEF051FA2EBCE4DD5 /* SexPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexPickerView.m; sourceTree = "<group>"; };
+		2EAE0CA419F5901F628868A7 /* SearchCityPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityPage.m; sourceTree = "<group>"; };
+		2EAE0CBA93EAC9C5FD971CB9 /* HttpRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestHelper.h; sourceTree = "<group>"; };
+		2EAE0DCB350BAB9D39F83AC6 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		2EAE0E767982070712CB344B /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		2EAE0E854BE3A18729187651 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2EAE0ECBF5E5FE5AA3832FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		2EAE0F10DEF2E8EF7BD2FFF6 /* RegisterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterObject.h; sourceTree = "<group>"; };
+		2EAE0FBEDDB9C73AAB50A9F4 /* HttpRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestHelper.m; sourceTree = "<group>"; };
 		2EAE0FCAED30E7588304467D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C3FFB1FB1F9484660076589D /* UserMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMessageCell.h; sourceTree = "<group>"; };
-		C3FFB1FC1F9484660076589D /* UserMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMessageCell.m; sourceTree = "<group>"; };
-		C3FFB1FD1F9484660076589D /* UserMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserMessageCell.xib; sourceTree = "<group>"; };
-		C3FFB2371F95C7950076589D /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
-		C3FFB2381F95C7950076589D /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
-		C3FFB2391F95C7950076589D /* RegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
-		C3FFB2501F974EEC0076589D /* RegisterTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTextCell.h; sourceTree = "<group>"; };
-		C3FFB2511F974EEC0076589D /* RegisterTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTextCell.m; sourceTree = "<group>"; };
-		C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTextCell.xib; sourceTree = "<group>"; };
-		C3FFB2551F9759920076589D /* AccessoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessoryTableViewCell.h; sourceTree = "<group>"; };
-		C3FFB2561F9759920076589D /* AccessoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessoryTableViewCell.m; sourceTree = "<group>"; };
-		C3FFB2571F9759920076589D /* AccessoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryTableViewCell.xib; sourceTree = "<group>"; };
-		C3FFB25A1F975D7F0076589D /* SexPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexPickerView.h; sourceTree = "<group>"; };
-		C3FFB25B1F975D7F0076589D /* SexPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexPickerView.m; sourceTree = "<group>"; };
-		C3FFB25D1F9835650076589D /* SearchCityPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityPage.h; sourceTree = "<group>"; };
-		C3FFB25E1F9835650076589D /* SearchCityPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityPage.m; sourceTree = "<group>"; };
-		C3FFB25F1F9835650076589D /* SearchCityPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCityPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EAE00459039A85834BB4F16 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE0FBEDDB9C73AAB50A9F4 /* HttpRequestHelper.m */,
+				2EAE0CBA93EAC9C5FD971CB9 /* HttpRequestHelper.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		2EAE00532FC347048A26D528 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +104,17 @@
 			);
 			sourceTree = "<group>";
 		};
+		2EAE068C2F7AF167B358FCF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE090C80B1FE075BEAC41F /* User.m */,
+				2EAE0B166E3AE37CA348ECBA /* User.h */,
+				2EAE02D3010C697849130F3F /* RegisterObject.h */,
+				2EAE0704A700D428E000E621 /* RegisterObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2EAE08578E1F65398ED9CB58 /* UITableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,33 +125,43 @@
 				2EAE091392F1C32ECB697343 /* AppDelegate.h */,
 				2EAE0A1F70FAD5389692F9A2 /* AppDelegate.m */,
 				2EAE00382893106024597B4E /* Main.storyboard */,
-				2EAE07F9AECA9A1E38669027 /* ViewController.h */,
-				2EAE05F66395C3BB62256BEC /* ViewController.m */,
-				2EAE0E38163ACE461975A45A /* User.m */,
-				2EAE00489A4E7C0346BC77E5 /* User.h */,
-				C3FFB1FB1F9484660076589D /* UserMessageCell.h */,
-				C3FFB1FC1F9484660076589D /* UserMessageCell.m */,
-				C3FFB1FD1F9484660076589D /* UserMessageCell.xib */,
-				C3FFB2371F95C7950076589D /* RegisterController.h */,
-				C3FFB2381F95C7950076589D /* RegisterController.m */,
-				C3FFB2391F95C7950076589D /* RegisterController.xib */,
-				2EAE04BCF1D12620E13ED20A /* DatePickerView.h */,
-				2EAE070B0720B65B6D966D69 /* DatePickerView.m */,
-				C3FFB2501F974EEC0076589D /* RegisterTextCell.h */,
-				C3FFB2511F974EEC0076589D /* RegisterTextCell.m */,
-				C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */,
-				C3FFB2551F9759920076589D /* AccessoryTableViewCell.h */,
-				C3FFB2561F9759920076589D /* AccessoryTableViewCell.m */,
-				C3FFB2571F9759920076589D /* AccessoryTableViewCell.xib */,
-				C3FFB25A1F975D7F0076589D /* SexPickerView.h */,
-				C3FFB25B1F975D7F0076589D /* SexPickerView.m */,
-				C3FFB25D1F9835650076589D /* SearchCityPage.h */,
-				C3FFB25E1F9835650076589D /* SearchCityPage.m */,
-				C3FFB25F1F9835650076589D /* SearchCityPage.xib */,
-				2EAE0A551750830BD656911A /* RegisterObject.m */,
-				2EAE0F10DEF2E8EF7BD2FFF6 /* RegisterObject.h */,
+				2EAE00459039A85834BB4F16 /* Util */,
+				2EAE068C2F7AF167B358FCF1 /* Model */,
+				2EAE09479FB64F5C7535411C /* Controller */,
+				2EAE0EDA90988A807B5E2E58 /* View */,
 			);
 			path = UITableViewDemo;
+			sourceTree = "<group>";
+		};
+		2EAE09479FB64F5C7535411C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE09182B2CE5938CC21FA6 /* RegisterController.h */,
+				2EAE0DCB350BAB9D39F83AC6 /* RegisterController.m */,
+				2EAE0CA419F5901F628868A7 /* SearchCityPage.m */,
+				2EAE03850D52A4B6425020A4 /* SearchCityPage.h */,
+				2EAE0E854BE3A18729187651 /* ViewController.m */,
+				2EAE0C65B580725AD5BE0D9F /* ViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EAE0EDA90988A807B5E2E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE05A9BE104DA6E5561235 /* RegisterTextCell.m */,
+				2EAE0259FFEEA9823091C39E /* AccessoryTableViewCell.h */,
+				2EAE0B03EFB618F127044AC5 /* UserMessageCell.xib */,
+				2EAE0924AAF0EB34D53470C7 /* DatePickerView.m */,
+				2EAE0540EA753DFABC8CFC24 /* UserMessageCell.h */,
+				2EAE0A5F424AE9829A7A261E /* SexPickerView.h */,
+				2EAE0B34A88035D9255E5668 /* RegisterTextCell.h */,
+				2EAE0E767982070712CB344B /* DatePickerView.h */,
+				2EAE029644D110F3594544A2 /* AccessoryTableViewCell.m */,
+				2EAE0C9AEF051FA2EBCE4DD5 /* SexPickerView.m */,
+				2EAE0A9402EBB1CE898EF391 /* UserMessageCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +216,8 @@
 			files = (
 				2EAE099EC9B61B6AD842FD8D /* Assets.xcassets in Resources */,
 				2EAE066016A2E6A33DEBF2B8 /* LaunchScreen.storyboard in Resources */,
-				C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */,
-				C3FFB2541F974EEC0076589D /* RegisterTextCell.xib in Resources */,
-				C3FFB2591F9759920076589D /* AccessoryTableViewCell.xib in Resources */,
-				C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */,
 				2EAE009AA34C47920A9C756F /* Main.storyboard in Resources */,
-				C3FFB2611F9835650076589D /* SearchCityPage.xib in Resources */,
+				2EAE0C8684B4DC3929251AF2 /* UserMessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,17 +229,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EAE0894F1361971CD867D1E /* main.m in Sources */,
-				C3FFB1FE1F9484660076589D /* UserMessageCell.m in Sources */,
-				C3FFB2581F9759920076589D /* AccessoryTableViewCell.m in Sources */,
 				2EAE0123E07C5B55C5DDC81A /* AppDelegate.m in Sources */,
-				C3FFB2531F974EEC0076589D /* RegisterTextCell.m in Sources */,
-				C3FFB2601F9835650076589D /* SearchCityPage.m in Sources */,
-				C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */,
-				2EAE02ED58561F87A4BD6C2D /* ViewController.m in Sources */,
-				2EAE0BDF3C8DB050D6F4D8EE /* User.m in Sources */,
-				C3FFB25C1F975D7F0076589D /* SexPickerView.m in Sources */,
-				2EAE0DCB5B853995000BD326 /* DatePickerView.m in Sources */,
-				2EAE084B097984D3AFBDBA04 /* RegisterObject.m in Sources */,
+				2EAE0A1B460B55FC0D74DB7B /* HttpRequestHelper.m in Sources */,
+				2EAE0F447F748E0B8D5DBF2C /* User.m in Sources */,
+				2EAE031A06AEECADF223645F /* RegisterTextCell.m in Sources */,
+				2EAE08049ABCEA270FAC3085 /* DatePickerView.m in Sources */,
+				2EAE03670EEA98EF4B0214F1 /* AccessoryTableViewCell.m in Sources */,
+				2EAE0673A07A94BF3396F79A /* SexPickerView.m in Sources */,
+				2EAE0E3A1B9F448B454553E5 /* UserMessageCell.m in Sources */,
+				2EAE03D9D3B79234911A1A86 /* RegisterController.m in Sources */,
+				2EAE0C9C22B77AAAA34AF2FC /* SearchCityPage.m in Sources */,
+				2EAE032BC891C24CC22D837F /* ViewController.m in Sources */,
+				2EAE0259A7708BA991AC9D86 /* RegisterObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

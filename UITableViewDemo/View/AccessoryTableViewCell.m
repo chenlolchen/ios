@@ -10,9 +10,10 @@
 
 @implementation AccessoryTableViewCell
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        NSLog(@"aaaaa");
         self.labelName = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
         self.labelText = [UITextField new];
         self.labelText.textAlignment = NSTextAlignmentCenter;

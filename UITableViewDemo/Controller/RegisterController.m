@@ -13,14 +13,13 @@
 #import "SexPickerView.h"
 #import "SearchCityPage.h"
 #import "RegisterObject.h"
-#import "UserMessageCell.h"
 #import "ViewController.h"
 
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 
-@interface RegisterController () <UITextFieldDelegate> {
+@interface RegisterController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
     NSArray *formLabelArray;
     UITapGestureRecognizer *tap;
     DatePickerView *_datePickerView;
@@ -36,11 +35,13 @@
     [super viewDidLoad];
 
     self.title = @"Register";
-    formLabelArray = [self tableDataSource];
-    self.textFieldArray = [[NSMutableArray alloc] init];
-
     [self createTableView];
+    [self addTapGestureRecognizer];
+    [_tableView registerClass:[AccessoryTableViewCell class] forCellReuseIdentifier:@"AccessoryTableViewCell"];
+}
 
+- (void)addTapGestureRecognizer {
+    self.textFieldArray = [[NSMutableArray alloc] init];            // save the textField index
     tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapView:)];
 
     tap.numberOfTapsRequired = 1;
@@ -52,11 +53,12 @@
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
+
+    formLabelArray = [self tableDataSource];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 
     UIView *tableFooterView = [UIView new];
-
     tableFooterView.frame = CGRectMake(0, 0, 200, kScreenHeight);
 
     //Button 按钮
@@ -66,6 +68,7 @@
     [registerBtn addTarget:self action:@selector(registerAction) forControlEvents:UIControlEventTouchUpInside];
     registerBtn.backgroundColor = [UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00];
     registerBtn.frame = CGRectMake((kScreenWidth - 200) / 2, 50, 200, 50);
+    registerBtn.layer.cornerRadius = 5.0;
     [tableFooterView addSubview:registerBtn];
 
     self.tableView.tableFooterView = tableFooterView;
@@ -81,28 +84,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-- (void)registerAction {
-    NSArray *cells = [self.tableView visibleCells];
-    RegisterTextCell *nameCell = cells[0];
-    RegisterTextCell *sexCell = cells[1];
-    RegisterTextCell *birthdayCell = cells[2];
-    RegisterTextCell *cityCell = cells[3];
-
-    NSLog(@"register ..");
-    NSLog(@"nameCell = %@", nameCell.labelText.text);
-    NSLog(@"sexCell = %@", sexCell.labelText.text);
-    NSLog(@"birthdayCell = %@", birthdayCell.labelText.text);
-    NSLog(@"cityCell = %@", cityCell.labelText.text);
-
-    [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"isLogin"];
-    ViewController *viewController = [[ViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00]];
-    [navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
-
-    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (NSArray *)tableDataSource {
@@ -134,7 +115,7 @@
         cell.labelText.delegate = self;
         return cell;
     } else {
-        AccessoryTableViewCell *cell = [AccessoryTableViewCell new];
+        AccessoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AccessoryTableViewCell"];
         cell.labelName.text = registerObject.labelText;
         cell.labelText.placeholder = registerObject.placeholderText;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -202,6 +183,28 @@
         return NO;
     }
     return YES;
+}
+
+- (void)registerAction {
+    NSArray *cells = [self.tableView visibleCells];
+    RegisterTextCell *nameCell = cells[0];
+    RegisterTextCell *sexCell = cells[1];
+    RegisterTextCell *birthdayCell = cells[2];
+    RegisterTextCell *cityCell = cells[3];
+
+    NSLog(@"register ..");
+    NSLog(@"nameCell = %@", nameCell.labelText.text);
+    NSLog(@"sexCell = %@", sexCell.labelText.text);
+    NSLog(@"birthdayCell = %@", birthdayCell.labelText.text);
+    NSLog(@"cityCell = %@", cityCell.labelText.text);
+
+    [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"isLogin"];
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00]];
+    [navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 @end
