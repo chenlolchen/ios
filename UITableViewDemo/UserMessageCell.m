@@ -15,16 +15,28 @@
 
 @implementation UserMessageCell
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    NSLog(@"init2222 ...");
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+
     NSLog(@"init ...");
+}
+
+- (void)dealloc {
+    NSLog(@"UserMessageCell dealloc .");
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 - (void)setUser:(User *)user {

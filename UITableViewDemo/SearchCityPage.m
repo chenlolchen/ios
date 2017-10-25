@@ -55,9 +55,9 @@
 - (void)createSearch {
     _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     _searchController.searchResultsUpdater = self;
-    _searchController.searchBar.delegate = self;//*****这个很重要，一定要设置并引用了代理之后才能调用searchBar的常用方法*****
-    _searchController.dimsBackgroundDuringPresentation = NO;//是否添加半透明覆盖层
-    _searchController.hidesNavigationBarDuringPresentation = NO;//是否隐藏导航栏
+//    _searchController.searchBar.delegate = self;                    // 设置searchBar的常用方法
+    _searchController.dimsBackgroundDuringPresentation = NO;        // 是否添加半透明覆盖层
+    _searchController.hidesNavigationBarDuringPresentation = NO;    // 是否隐藏导航栏
     _searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
     self.tableView.tableHeaderView = self.searchController.searchBar;
 
@@ -81,7 +81,6 @@
     }
     if (self.searchController.active) {
         NSLog(@"into table view, selectedCity is : %@, tablecell is : %@", self.selectedCity, searchList[indexPath.row]);
-//        _tableView.hidden = NO;
         if ([searchList[indexPath.row] isEqualToString:self.selectedCity]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
@@ -90,7 +89,6 @@
         if ([dataList[indexPath.row] isEqualToString:self.selectedCity]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
-//        _tableView.hidden = YES;
         [cell.textLabel setText:dataList[indexPath.row]];
     }
 

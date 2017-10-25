@@ -13,6 +13,8 @@
 #import "SexPickerView.h"
 #import "SearchCityPage.h"
 #import "RegisterObject.h"
+#import "UserMessageCell.h"
+#import "ViewController.h"
 
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -93,6 +95,14 @@
     NSLog(@"sexCell = %@", sexCell.labelText.text);
     NSLog(@"birthdayCell = %@", birthdayCell.labelText.text);
     NSLog(@"cityCell = %@", cityCell.labelText.text);
+
+    [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"isLogin"];
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00]];
+    [navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (NSArray *)tableDataSource {

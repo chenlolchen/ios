@@ -20,8 +20,6 @@
 		C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB1FD1F9484660076589D /* UserMessageCell.xib */; };
 		C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2381F95C7950076589D /* RegisterController.m */; };
 		C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2391F95C7950076589D /* RegisterController.xib */; };
-		C3FFB24E1F974BEB0076589D /* RegisterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB24C1F974BEB0076589D /* RegisterLabelCell.m */; };
-		C3FFB24F1F974BEB0076589D /* RegisterLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB24D1F974BEB0076589D /* RegisterLabelCell.xib */; };
 		C3FFB2531F974EEC0076589D /* RegisterTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2511F974EEC0076589D /* RegisterTextCell.m */; };
 		C3FFB2541F974EEC0076589D /* RegisterTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */; };
 		C3FFB2581F9759920076589D /* AccessoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB2561F9759920076589D /* AccessoryTableViewCell.m */; };
@@ -54,9 +52,6 @@
 		C3FFB2371F95C7950076589D /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		C3FFB2381F95C7950076589D /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		C3FFB2391F95C7950076589D /* RegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
-		C3FFB24B1F974BEB0076589D /* RegisterLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterLabelCell.h; sourceTree = "<group>"; };
-		C3FFB24C1F974BEB0076589D /* RegisterLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterLabelCell.m; sourceTree = "<group>"; };
-		C3FFB24D1F974BEB0076589D /* RegisterLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterLabelCell.xib; sourceTree = "<group>"; };
 		C3FFB2501F974EEC0076589D /* RegisterTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTextCell.h; sourceTree = "<group>"; };
 		C3FFB2511F974EEC0076589D /* RegisterTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTextCell.m; sourceTree = "<group>"; };
 		C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTextCell.xib; sourceTree = "<group>"; };
@@ -127,9 +122,6 @@
 				C3FFB2391F95C7950076589D /* RegisterController.xib */,
 				2EAE04BCF1D12620E13ED20A /* DatePickerView.h */,
 				2EAE070B0720B65B6D966D69 /* DatePickerView.m */,
-				C3FFB24B1F974BEB0076589D /* RegisterLabelCell.h */,
-				C3FFB24C1F974BEB0076589D /* RegisterLabelCell.m */,
-				C3FFB24D1F974BEB0076589D /* RegisterLabelCell.xib */,
 				C3FFB2501F974EEC0076589D /* RegisterTextCell.h */,
 				C3FFB2511F974EEC0076589D /* RegisterTextCell.m */,
 				C3FFB2521F974EEC0076589D /* RegisterTextCell.xib */,
@@ -202,7 +194,6 @@
 				C3FFB23B1F95C7950076589D /* RegisterController.xib in Resources */,
 				C3FFB2541F974EEC0076589D /* RegisterTextCell.xib in Resources */,
 				C3FFB2591F9759920076589D /* AccessoryTableViewCell.xib in Resources */,
-				C3FFB24F1F974BEB0076589D /* RegisterLabelCell.xib in Resources */,
 				C3FFB1FF1F9484660076589D /* UserMessageCell.xib in Resources */,
 				2EAE009AA34C47920A9C756F /* Main.storyboard in Resources */,
 				C3FFB2611F9835650076589D /* SearchCityPage.xib in Resources */,
@@ -224,7 +215,6 @@
 				C3FFB2601F9835650076589D /* SearchCityPage.m in Sources */,
 				C3FFB23A1F95C7950076589D /* RegisterController.m in Sources */,
 				2EAE02ED58561F87A4BD6C2D /* ViewController.m in Sources */,
-				C3FFB24E1F974BEB0076589D /* RegisterLabelCell.m in Sources */,
 				2EAE0BDF3C8DB050D6F4D8EE /* User.m in Sources */,
 				C3FFB25C1F975D7F0076589D /* SexPickerView.m in Sources */,
 				2EAE0DCB5B853995000BD326 /* DatePickerView.m in Sources */,

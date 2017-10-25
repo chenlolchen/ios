@@ -6,7 +6,5 @@
 #import "RegisterObject.h"
 
 
-@implementation RegisterObject {
-
-}
+@implementation RegisterObject
 @end

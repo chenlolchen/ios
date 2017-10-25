@@ -20,15 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-
-    Boolean flag = false;
-    UIViewController *vc;
-    if (flag) {
-        vc = [[ViewController alloc] init];
-    } else {
-        vc = [[RegisterController alloc] init];
-    }
+    UIViewController *vc = [[ViewController alloc] init];
 
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00]];
