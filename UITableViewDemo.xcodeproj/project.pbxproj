@@ -18,6 +18,7 @@
 		2EAE0673A07A94BF3396F79A /* SexPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0C9AEF051FA2EBCE4DD5 /* SexPickerView.m */; };
 		2EAE08049ABCEA270FAC3085 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0924AAF0EB34D53470C7 /* DatePickerView.m */; };
 		2EAE0894F1361971CD867D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE039B55F4268899B75819 /* main.m */; };
+		2EAE08D9ABA9D110C5BD5F3E /* CustomerNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0B5956201256589051B6 /* CustomerNavigationViewController.m */; };
 		2EAE099EC9B61B6AD842FD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */; };
 		2EAE0A1B460B55FC0D74DB7B /* HttpRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE0FBEDDB9C73AAB50A9F4 /* HttpRequestHelper.m */; };
 		2EAE0C8684B4DC3929251AF2 /* UserMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE0B03EFB618F127044AC5 /* UserMessageCell.xib */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		2EAE0259FFEEA9823091C39E /* AccessoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessoryTableViewCell.h; sourceTree = "<group>"; };
 		2EAE029644D110F3594544A2 /* AccessoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessoryTableViewCell.m; sourceTree = "<group>"; };
+		2EAE02CDD65A4DAD87DCE778 /* CustomerNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerNavigationViewController.h; sourceTree = "<group>"; };
 		2EAE02D3010C697849130F3F /* RegisterObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterObject.h; sourceTree = "<group>"; };
 		2EAE03850D52A4B6425020A4 /* SearchCityPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityPage.h; sourceTree = "<group>"; };
 		2EAE039B55F4268899B75819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		2EAE0B03EFB618F127044AC5 /* UserMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserMessageCell.xib; sourceTree = "<group>"; };
 		2EAE0B166E3AE37CA348ECBA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		2EAE0B34A88035D9255E5668 /* RegisterTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTextCell.h; sourceTree = "<group>"; };
+		2EAE0B5956201256589051B6 /* CustomerNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerNavigationViewController.m; sourceTree = "<group>"; };
 		2EAE0C60BAFFC9FF4ADA3921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EAE0C65B580725AD5BE0D9F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2EAE0C867F43103093F0AF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				2EAE03850D52A4B6425020A4 /* SearchCityPage.h */,
 				2EAE0E854BE3A18729187651 /* ViewController.m */,
 				2EAE0C65B580725AD5BE0D9F /* ViewController.h */,
+				2EAE0B5956201256589051B6 /* CustomerNavigationViewController.m */,
+				2EAE02CDD65A4DAD87DCE778 /* CustomerNavigationViewController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				2EAE0C9C22B77AAAA34AF2FC /* SearchCityPage.m in Sources */,
 				2EAE032BC891C24CC22D837F /* ViewController.m in Sources */,
 				2EAE0259A7708BA991AC9D86 /* RegisterObject.m in Sources */,
+				2EAE08D9ABA9D110C5BD5F3E /* CustomerNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

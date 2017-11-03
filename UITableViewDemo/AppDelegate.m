@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "TableViewDemo.h"
 #import "RegisterController.h"
+#import "CustomerNavigationViewController.h"
 
 
 @interface AppDelegate ()
@@ -22,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UIViewController *vc = [[ViewController alloc] init];
 
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    CustomerNavigationViewController *navigationController = [[CustomerNavigationViewController alloc] initWithRootViewController:vc];
     [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.27 green:0.64 blue:0.99 alpha:1.00]];
     [navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
 

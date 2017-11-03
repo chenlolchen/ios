@@ -33,7 +33,9 @@ static NSString *cellId = @"UserMessageCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     _httpRequestHelper = [[HttpRequestHelper alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleStatusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 
     self.title = @"User Name";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -42,6 +44,19 @@ static NSString *cellId = @"UserMessageCellID";
     [self loadData];
     [self checkLogin];
     NSLog(@"exit viewDidLoad");
+}
+
+- (void)handleStatusBarOrientationChange:(id)handleStatusBarOrientationChange {
+    NSLog(@"hhhhhhh");
+    self.tableView.frame = [UIScreen mainScreen].bounds;
+}
+
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 - (void)checkLogin {
