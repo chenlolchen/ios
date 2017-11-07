@@ -11,6 +11,7 @@
 #import "UserMessageCell.h"
 #import "RegisterController.h"
 #import "HttpRequestHelper.h"
+#import "Masonry.h"
 
 #define kScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -35,7 +36,6 @@ static NSString *cellId = @"UserMessageCellID";
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     _httpRequestHelper = [[HttpRequestHelper alloc] init];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleStatusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 
     self.title = @"User Name";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -46,10 +46,6 @@ static NSString *cellId = @"UserMessageCellID";
     NSLog(@"exit viewDidLoad");
 }
 
-- (void)handleStatusBarOrientationChange:(id)handleStatusBarOrientationChange {
-    NSLog(@"hhhhhhh");
-    self.tableView.frame = [UIScreen mainScreen].bounds;
-}
 
 - (BOOL)shouldAutorotate{
     return YES;
@@ -121,6 +117,8 @@ static NSString *cellId = @"UserMessageCellID";
 
 - (void)createTableView {
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    _tableView.translatesAutoresizingMaskIntoConstraints = NO;
+
     [self.tableView registerNib:[UINib nibWithNibName:@"UserMessageCell" bundle:nil] forCellReuseIdentifier:cellId];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
@@ -128,10 +126,14 @@ static NSString *cellId = @"UserMessageCellID";
     self.tableView.dataSource = self;
 
     [self.view addSubview:self.tableView];
+
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.offset(0);
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"count = %lu", tableDataArray.count);
+    NSLog(@"count = %d", tableDataArray.count);
     return tableDataArray.count;
 }
 
@@ -144,8 +146,8 @@ static NSString *cellId = @"UserMessageCellID";
 //        cell = [[UserMessageCell alloc] init];
 //    }
 
-//    UserMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-    UserMessageCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"UserMessageCell" owner:nil options:nil] lastObject];
+    UserMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+//    UserMessageCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"UserMessageCell" owner:nil options:nil] lastObject];
 
 //    if(indexPath.row == 1){
 //        cell.backgroundColor = [UIColor redColor];
